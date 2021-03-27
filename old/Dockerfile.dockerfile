@@ -1,6 +1,4 @@
-FROM ubuntu
+FROM kuangbin/shellinabox-ubuntu
 MAINTAINER Me (Me@mail.com)
-RUN apt-get update
-RUN apt-get install -y nginx
-ENTRYPOINT [“/usr/sbin/nginx”,”-g”,”daemon off;”]
+ENTRYPOINT ["shellinaboxd", "-s", "/:LOGIN", "--disable-ssl"]
 EXPOSE 80
