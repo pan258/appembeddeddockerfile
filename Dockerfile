@@ -1,4 +1,4 @@
 FROM kuangbin/shellinabox-ubuntu
 MAINTAINER Me (Me@mail.com)
 ENTRYPOINT ["shellinaboxd", "-s", "/:LOGIN", "--disable-ssl"]
-EXPOSE 80
+EXPOSE 4200
